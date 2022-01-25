@@ -345,7 +345,7 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
   width: 1000vw;
   height: 100%;
   animation-name: slideShow;
-  animation-duration: 20s;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
 }
 @keyframes slideShow {
@@ -374,7 +374,8 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #FFF;
+  color: #000;
+  padding: 30px;
 }
 .section-team-area .sliders-pointers {
   margin-top: 30px;
@@ -394,5 +395,125 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
   cursor: pointer;
 }
 .section-team-area .pointer.active {
+  background-color: #B28756;
+}
+.section-team--avatar {
+  width: 150px;
+  height: auto;
+}
+.section-team--name {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 30px;
+}
+.section-team--role {
+  font-size: 14px;
+  color: #999;
+  margin-top: 5px;
+}
+.section-team--social {
+  display: flex;
+  margin-top: 20px;
+}
+.section-team--social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #CCC;
+  border-radius: 13px;
+  margin-right: 10px;
+}
+.section-team--social a:hover {
+  background-color: #B28756;
+}
+
+/* Áreas específicas do Happy Clients */
+.section-happy {
+  margin-left: -111px;
+}
+.section-happy .sliders {
+  width: 1000vw;
+  height: 100%;
+  animation-name: slideShow;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+@keyframes slideShow {
+  33%{
+    margin-left: 0vw;
+  }
+  66%{
+    margin-left: -100vw;
+  }
+  99%{
+    margin-left: -200vw;
+  }
+}
+.section-happy .slide {
+  display: inline-block;
+  width: 100vw;
+  height: 100%;
+}
+.section-happy .slidearea {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 600px;
+  margin: auto;
+  margin-top: 30px;
+}
+.section-happy .slidearea h1 {
+  margin-top: 10px;
+  padding-bottom: 0;
+  font-size: 40px;
+  color: #999;
+}
+.section-happy .slidearea p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+}
+.section-happy--avatar {
+  width: 150px;
+  height: auto;
+}
+.section-happy--name {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 30px;
+}
+.section-happy--role {
+  font-size: 14px;
+  color: #999;
+  margin-top: 5px;
+}
+.section-happy-area .sliders-pointers {
+  margin-top: 30px;
+  height: 20px;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-happy-area .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #B28756;
+  border-radius: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.section-happy-area .pointer.active {
   background-color: #B28756;
 }
