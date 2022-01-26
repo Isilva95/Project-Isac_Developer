@@ -517,3 +517,82 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
 .section-happy-area .pointer.active {
   background-color: #B28756;
 }
+
+/* Áreas específicas das Empresas e Marcas */
+.default-brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  background-color: #FFF;
+}
+.default-brands .section-brands a {
+  margin-right: 70px;
+}
+.default-brands .section-brands a img {
+  transition: transform .2s;
+}
+.default-brands .section-brands a img:hover {
+  transform: scale(1.1);
+}
+.default-brands .section-brands a:last-child {
+  margin-right: 0;
+}
+
+/* Áreas específicas da Price */
+.default.light.bg-price {
+  background-color: #DDD;
+  border-bottom: 1px solid #CCC;
+}
+.section-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-price .section-price--area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-right: 30px;
+  width: 220px;
+  height: 320px;
+  background-color: #FFF;
+}
+.section-price .section-price--area:last-child {
+  margin-right: 0;
+}
+.section-price--title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.section-price--area h1 {
+  font-size: 30px;
+}
+.section-price--description {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+  font-size: 10px;
+  padding-bottom: 20px;
+}
+.section-price--description span {
+  text-transform: uppercase;
+  color: #999;
+  font-size: 12px;
+}
+.section-price--information {
+  font-size: 11px;
+  color: #999;
+}
+.button.black {
+  background-color: #252424;
+}
+.button:hover {
+  background-color: #B28756;
+}
