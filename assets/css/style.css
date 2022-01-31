@@ -596,3 +596,74 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
 .button:hover {
   background-color: #B28756;
 }
+
+/* Áreas específicas do Premium */
+.section-body.premium {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-premium {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 50px;
+  width: 880px;
+}
+.section-premium--image {
+  margin-right: 80px;
+}
+.section-premium--image img {
+  width: 300px;
+}
+.section-premium--information {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.premium-feature {
+  display: flex;
+  padding-bottom: 30px;
+}
+.premium-feature:last-child {
+  padding-bottom: 0;
+}
+.premium-feature--icone {
+  margin-right: 30px;
+}
+.premium-feature--info h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.premium-feature--info p {
+  font-size: 12px;
+  color: #999;
+}
+.premium-feature--info span {
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+
+.section-body .sliders-pointers {
+  margin-top: 30px;
+  height: 20px;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-body .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #B28756;
+  border-radius: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.section-body .pointer.active {
+  background-color: #B28756;
+}
