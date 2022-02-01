@@ -570,9 +570,11 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
   font-size: 14px;
   font-weight: 600;
   padding-bottom: 10px;
+  color: #252424;
 }
 .section-price--area h1 {
   font-size: 30px;
+  color: #252424;
 }
 .section-price--description {
   text-transform: uppercase;
@@ -645,8 +647,6 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
   font-size: 13px;
   line-height: 20px;
 }
-
-
 .section-body .sliders-pointers {
   margin-top: 30px;
   height: 20px;
@@ -666,4 +666,100 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
 }
 .section-body .pointer.active {
   background-color: #B28756;
+}
+
+/* Áreas específicas do Some Facts */
+.section-facts {
+  display: flex;
+}
+.section-fact {
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+.section-fact div {
+  background-color: #999;
+  width: 16px;
+  height: 3px;
+  margin: auto;
+}
+.section-fact h1 {
+  font-size: 50px;
+  color: #B28756;
+}
+.section-fact h4 {
+  margin-top: 4px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.section-fact p {
+  font-size: 13px;
+  color: #999;
+}
+.section-fact .space {
+  margin-top: 4px;
+}
+
+/* Áreas específicas das Redes Sociais */
+.default-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border-bottom: 1px solid #CCC;
+  background-color: #FFF;
+}
+.default-social .section-share {
+  margin-right: 70px;
+}
+.section-social .twitter {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #09e7e7;
+  border-radius: 13px;
+  margin-right: 10px;
+}
+.section-social .linkedin {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #1389f7;
+  border-radius: 13px;
+  margin-right: 10px;
+}
+.section-social .facebook {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #005fb8;
+  border-radius: 13px;
+  margin-right: 10px;
+}
+.section-social .googleplus {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #e60909;
+  border-radius: 13px;
+  margin-right: 10px;
+}
+.section-social .pinterest {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #c42f2f;
+  border-radius: 13px;
+  margin-right: 10px;
 }
