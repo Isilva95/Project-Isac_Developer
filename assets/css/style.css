@@ -713,17 +713,46 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
 .default-social .section-share {
   margin-right: 70px;
 }
-.section-social .twitter {
+.section-share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-share a {
+  margin-right: 15px;
+}
+.section-share h3 {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #999;
+}
+.section-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-social--specific p {
+  font-size: 10px;
+  font-weight: 600;
+  color: #999;
+}
+.section-social--specific {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.section-social--specific .twitter {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 25px;
   height: 25px;
-  background-color: #09e7e7;
+  background-color: #0bcfcf;
   border-radius: 13px;
   margin-right: 10px;
 }
-.section-social .linkedin {
+.section-social--specific .linkedin {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -733,7 +762,7 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
   border-radius: 13px;
   margin-right: 10px;
 }
-.section-social .facebook {
+.section-social--specific .facebook {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -743,7 +772,7 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
   border-radius: 13px;
   margin-right: 10px;
 }
-.section-social .googleplus {
+.section-social--specific .googleplus {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -753,7 +782,7 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
   border-radius: 13px;
   margin-right: 10px;
 }
-.section-social .pinterest {
+.section-social--specific .pinterest {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -762,4 +791,59 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
   background-color: #c42f2f;
   border-radius: 13px;
   margin-right: 10px;
+}
+
+/* Áreas específicas do Contact Us */
+.section-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-information {
+  width: 500px;
+}
+.form-information input {
+  width: 238px;
+  margin-right: 20px;
+}
+.form-information input:last-child {
+  margin-right: 0;
+}
+form input {
+  margin-top: 30px;
+  padding-bottom: 7px;
+  border: none;
+  background-color: #F7F7F7;
+  border-bottom: 2px solid #999;
+  outline: none;
+  color: #999;
+}
+form input::placeholder {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #999;
+}
+form textarea {
+  margin-top: 60px;
+  border: none;
+  background-color: #F7F7F7;
+  border-bottom: 2px solid #999;
+  outline: none;
+  resize: none;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: #999;
+}
+form textarea::placeholder {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #999;
+}
+form .button {
+  margin: auto;
+  margin-top: 50px;
 }
