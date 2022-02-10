@@ -887,3 +887,61 @@ form .button {
   width: 15px;
   height: auto;
 }
+
+/* Áreas específicas do Footer */
+.section-body.footer {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+.section-footer--social {
+  width: 380px;
+}
+.footer-social a{
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #504f4f;
+  border-radius: 15px;
+  margin-right: 8px;
+}
+.footer-social a:hover {
+  background-color: #B28756;
+}
+.footer-legend {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 130px;
+}
+.section-footer--text {
+  font-size: 12px;
+  width: 380px;
+  line-height: 20px;
+}
+.section-footer--form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  background-color: #504f4f;
+  border-radius: 3px;
+  margin-left: 30px;
+}
+.section-footer--form form input {
+  background-color: #504f4f;
+  text-align: center;
+  width: 245px;
+}
+.section-footer--form form input::placeholder {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #999;
+}
+.button.footer {
+  font-size: 11px;
+  margin-top: 20px;
+}
