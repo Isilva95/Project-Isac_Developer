@@ -431,8 +431,8 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
 }
 
 /* Áreas específicas do Happy Clients */
-.section-happy {
-  margin-left: -111px;
+.section-body.happy {
+  max-width: none;
 }
 .section-happy .sliders {
   width: 1000vw;
@@ -475,6 +475,7 @@ um limite, ele para em um determinado limite que no caso é os 1140px. Caso o mo
   text-align: center;
   font-size: 13px;
   color: #999;
+  width: 600px;
 }
 .section-happy--avatar {
   width: 150px;
@@ -944,4 +945,20 @@ form .button {
 .button.footer {
   font-size: 11px;
   margin-top: 20px;
+}
+
+
+
+
+/* CSS - Responsividade */
+@media (min-width: 450px) and (max-width: 800px) {
+  nav {
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 70vw;
+    height: calc(100vh - 100px);
+    top: 100px;
+    right: 0;
+  }
 }
