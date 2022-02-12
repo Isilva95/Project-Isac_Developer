@@ -36,6 +36,9 @@ header {
   border-radius: 25px;
   color: #000;
 }
+.menu-opener {
+  display: none;
+}
 .menu {
   flex: 1;
   display: flex;
@@ -952,13 +955,87 @@ form .button {
 
 /* CSS - Responsividade */
 @media (min-width: 450px) and (max-width: 800px) {
+
+  /* Área específica do menu */
+  .logo {
+    margin-left: 30px;
+  }
+  .menu-opener {
+    display: block;
+    width: 45px;
+    margin-right: 30px;
+  }
   nav {
+    display: none;
     position: absolute;
     z-index: 99;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     width: 70vw;
     height: calc(100vh - 100px);
     top: 100px;
     right: 0;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li a {
+    font-weight: bold;
+    height: 80px;
+    font-size: 25px;
+    margin-left: 50px;
+    border: 0;
+  }
+  .menu li.active a {
+    border: 0;
+    color: #B28756;
+  }
+
+  /* Área específica do About Us */
+  .section-aboutUs {
+    flex-direction: column;
+  }
+  .section-aboutUs--left {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .section-aboutUs--right {
+    width: auto;
+  }
+
+  /* Área específica do Services */
+  .section-services {
+    flex-wrap: wrap;
+  }
+  .section-service {
+    min-width: 50%;
+    margin-bottom: 30px;
+  }
+  .section-service:first-child {
+    border-left: 0;
+  }
+
+  /* Área específica do Our Team */
+  .section-team {
+    max-width: 580px;
+  }
+
+  /* Área específica do Map */
+  .section-map {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-map--area {
+    width: auto;
+  }
+  .section-map--info {
+    width: auto;
+  }
+  .section-map--info-item {
+    margin-bottom: 20px;
+  }
+  .section-map--info-item:last-child {
+    margin-bottom: 0;
   }
 }
