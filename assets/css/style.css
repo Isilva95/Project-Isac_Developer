@@ -953,7 +953,7 @@ form .button {
 
 
 
-/* CSS - Responsividade */
+/* CSS - Responsividade Tablet */
 @media (min-width: 450px) and (max-width: 800px) {
 
   /* Área específica do menu */
@@ -1019,6 +1019,177 @@ form .button {
   /* Área específica do Our Team */
   .section-team {
     max-width: 580px;
+  }
+
+  /* Área específica do Map */
+  .section-map {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-map--area {
+    width: auto;
+  }
+  .section-map--info {
+    width: auto;
+  }
+  .section-map--info-item {
+    margin-bottom: 20px;
+  }
+  .section-map--info-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* CSS - Responsividade Mobile */
+@media (max-width: 450px) {
+
+  /* Área específica do menu */
+  .logo {
+    margin-left: 30px;
+  }
+  .menu-opener {
+    display: block;
+    width: 45px;
+    margin-right: 30px;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 80vw;
+    height: calc(100vh - 100px);
+    top: 100px;
+    right: 0;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu li a {
+    font-weight: bold;
+    height: 60px;
+    font-size: 20px;
+    margin-left: 30px;
+    border: 0;
+  }
+  .menu li.active a {
+    border: 0;
+    color: #B28756;
+  }
+
+  /* Área do Banner */
+  .banner h1 {
+    font-size: 30px;
+  }
+  .banner h2 {
+    font-size: 15px;
+  }
+
+  /* Área específica do About Us */
+  .section-aboutUs {
+    flex-direction: column;
+  }
+  .section-aboutUs--left {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .section-aboutUs--right {
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .section-aboutUs--right img {
+    width: 100%;
+  }
+
+  /* Área específica do Services */
+  .section-services {
+    flex-wrap: wrap;
+  }
+  .section-service {
+    min-width: 100%;
+    margin-bottom: 30px;
+    border: 0;
+  }
+  .section-service:first-child {
+    border-left: 0;
+  }
+
+  /* Área específica do Our Projects */
+  .section-projects--filters {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .section-projects--photo {
+    width: 320px;
+  }
+  .section-projects--photoarea {
+    width: 300px;
+    height: 190px;
+  }
+
+  /* Área específica do Our Team */
+  .section-team {
+    max-width: 280px;
+  }
+  .section-team .sliders {
+    animation-duration: 0s;
+  }
+
+  /* Área específica do Happy Clients */
+  .section-happy .slidearea {
+    width: 300px;
+  }
+  .section-happy .slidearea p {
+    width: 300px;
+  }
+
+  /* Área específica das Brands */
+  .default-brands {
+    padding: 30px;
+  }
+  .section-brands {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .default-brands .section-brands a {
+    margin-right: 0;
+    margin-top: 50px;
+  }
+  .default-brands .section-brands a:first-child {
+    margin-top: 0;
+  }
+
+  /* Área específica do Price */
+  .section-price {
+    flex-wrap: wrap;
+  }
+  .section-price .section-price--area {
+    max-width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
+    width: 300px;
+    height: 400px;
+  }
+
+  /* Área específica do Premium */
+  .section-premium {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section-premium--image {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .section-premium--information {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 35px;
+  }
+  .premium-feature--icone {
+    margin-right: 20px;
   }
 
   /* Área específica do Map */
