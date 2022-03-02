@@ -1192,6 +1192,68 @@ form .button {
     margin-right: 20px;
   }
 
+  /* Área específica do Some Facts */
+  .section-facts {
+    flex-wrap: wrap;
+  }
+  .section-facts {
+    min-width: 100%;
+    margin-bottom: 30px;
+    border: 0;
+  }
+  .section-facts:first-child {
+    border-left: 0;
+  }
+
+  /* Área específica das Redes Social */
+  .default-social {
+    flex-direction: column;
+  }
+  .default-social .section-share {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .section-social--specific {
+    flex-direction: column;
+    margin-right: 15px;
+  }
+  .section-social--specific:last-child {
+    margin-right: 0;
+  }
+  .section-social--specific a {
+    margin-right: 0;
+  }
+  .section-social--specific p {
+    margin-top: 5px;
+  }
+  .section-social--specific .twitter {
+    margin-right: 0;
+  }
+  .section-social--specific .linkedin {
+    margin-right: 0;
+  }
+  .section-social--specific .facebook {
+    margin-right: 0;
+  }
+  .section-social--specific .googleplus {
+    margin-right: 0;
+  }
+  .section-social--specific .pinterest {
+    margin-right: 0;
+  }
+
+  /* Área específica do Contact Us */
+  .form-information {
+    display: contents;
+  }
+  .form-information input {
+    width: 320px;
+    margin-right: 0;
+  }
+  .section-contact form textarea {
+    margin-top: 27px;
+  }
+
   /* Área específica do Map */
   .section-map {
     padding-left: 30px;
@@ -1208,5 +1270,30 @@ form .button {
   }
   .section-map--info-item:last-child {
     margin-bottom: 0;
+  }
+
+  /* Área específica do Footer */
+  .section-body.footer {
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-footer--social {
+    width: auto;
+  }
+  .footer-legend {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .section-footer--text p {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .section-footer--form {
+    width: 330px;
+    height: 200px;
+    margin-left: 0;
   }
 }
